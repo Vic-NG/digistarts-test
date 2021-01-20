@@ -1,14 +1,14 @@
 <div class="container">
-
+    
     <h1>
         Digite um número
     </h1>
     <form action="" [formGroup]="loginForm">
         <input type="number" id="num" required formControlName="num">
         
-    <button (click)="getValue()">
-        send
-    </button>
+        <button (click)="getValue()">
+            Verificar
+        </button>
     </form>
     <div>
         <ul>
@@ -16,7 +16,7 @@
                 <p>
                     {{ valor.num }}
                 </p>
-             
+                
             </li>
             {{ valor1 }}
         </ul>
