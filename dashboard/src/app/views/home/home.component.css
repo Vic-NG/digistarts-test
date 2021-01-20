@@ -1,0 +1,32 @@
+.container{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container div{
+    padding-top: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+button{
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+    background: rgb(25, 180, 59);
+    color: white;
+}
+input{
+        padding: 10px;
+        border-radius: 5px 0 0 5px;
+        border-right: none;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    font-size: 1.1rem;
+}

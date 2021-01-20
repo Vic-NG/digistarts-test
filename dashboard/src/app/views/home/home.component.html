@@ -1,1 +1,24 @@
-<p>home works!</p>
+<div class="container">
+
+    <h1>
+        Digite um número
+    </h1>
+    <form action="" [formGroup]="loginForm">
+        <input type="number" id="num" required formControlName="num">
+        
+    <button (click)="getValue()">
+        send
+    </button>
+    </form>
+    <div>
+        <ul>
+            <li>
+                <p>
+                    {{ valor.num }}
+                </p>
+             
+            </li>
+            {{ valor1 }}
+        </ul>
+    </div>
+</div>
