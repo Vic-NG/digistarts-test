@@ -1,24 +1,22 @@
 <div class="container">
-    
-    <h1>
-        Digite um número
-    </h1>
-    <form action="" [formGroup]="loginForm">
-        <input type="number" id="num" required formControlName="num">
-        
-        <button (click)="getValue()">
-            Verificar
-        </button>
-    </form>
-    <div>
-        <ul>
-            <li>
-                <p>
-                    {{ valor.num }}
-                </p>
-                
-            </li>
-        
-        </ul>
+  <h1>Digite um número</h1>
+
+  <form action="" [formGroup]="loginForm">
+
+    <label for="number">Number</label>
+    <input type="text" formControlName="number" />
+
+
+    <button type="button" (click)="addOrRemove($event)">Verificar</button>
+
+    <div *ngFor="let _ of this.loginForm.value.num; index as i">
+      <div>
+        {{ _ }}
+      </div>
+      <div>
+        <button type="button" (click)="addOrRemove($event, i)">remover</button>
+      </div>
     </div>
+    
+  </form>
 </div>
