@@ -4,21 +4,23 @@
         Digite um número
     </h1>
     <form action="" [formGroup]="loginForm">
-        <input type="number" id="num" required formControlName="num">
+
+        <input type="number" id="num" required formControlName="number">
         
-        <button (click)="getValue()">
+        <button (click)="addOrRemove($event)">
             Verificar
         </button>
-    </form>
+   
     <div>
         <ul>
-            <li>
+            <li *ngFor="let _ of this.loginForm.value.num; index as i">
                 <p>
-                    {{ valor.num }}
+                    {{ _ }}
                 </p>
                 
             </li>
         
         </ul>
     </div>
+    </form>
 </div>
